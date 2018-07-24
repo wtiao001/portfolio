@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Roboto+Slab" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div id="loader-wrapper">
+            <div id="loader">
+                <h1>welcome</h1> 
+            </div>
+            <div class="loader-section section-1"></div>
+            <div class="loader-section section-2"></div>
+            <div class="loader-section section-3"></div>
+            <div class="loader-section section-4"></div>
+            <div class="loader-section section-5"></div>
+            
+        </div>
+        <div>
+        <div class="nav-wrapper">
+            <div class="topnav">
+                <div class="home-wrap">
+                    <a href="#" class="home">Willis Tiao</a>
+                </div>
+                <div class="hamburger">
+                    <div class="menu-button"></div>
+                </div>
+                <div class="nav">
+                    <a href="#" class="about">about</a>
+                    <a href="#" class="projects">projects</a>
+                    <a href="#" class="contact">contact</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="background">
+            <div class="intro-wrap">
+            <div class="box1"></div>
+            <div class="box1-2"></div>
+            <div class="box2"></div>
+            <div class="box2-2"></div>
+            <div class="box3"></div>
+            <div class="box3-2"></div> 
+            </div>
+            <div class="text-1">UI Designer</div>
+            <div class="text-2">Front End Developer</div>
+            <div class="text-3">Engineer</div>
+        </div>
+        <div class="about-wrapper">
+
+        </div>
+         
+        </div>
+
+
+        
+    </body>
+    <script>
+// preloader script
+        $(document).ready(function(){
+
+        setTimeout(function(){
+            $('#loader-wrapper').addClass('loaded');    
+        },1000);
+//        setTimeout(function(){
+//            $('#loader-wrapper').removeClass('loaded');
+//        },1100);
+        setTimeout(function(){
+            $('body').addClass('intro-flow');});
+        setTimeout(function(){
+            $('#loader-wrapper').css({"display":"none"});
+        },2000);
+        setTimeout(function(){
+            $('body').removeClass('intro-flow');
+        },3000);
+        setTimeout(function(){
+            $('.home-wrap').css({"opacity":"1"});
+        },1800);
+        setTimeout(function(){
+            $('.about').css({"opacity":"1"});
+        },1900);
+        setTimeout(function(){
+            $('.projects').css({"opacity":"1"});
+        },1950);
+        setTimeout(function(){
+            $('.contact').css({"opacity":"1"});
+        },2000);
+        setTimeout(function(){
+            $('.intro-wrap').addClass('animated');
+        },2200);
+        setTimeout(function(){
+        $('.box1').addClass('animated');
+        },2500);
+        setTimeout(function(){
+            $('.box1-2').addClass('animated');
+        },2500);
+        setTimeout(function(){
+            $('.box2').addClass('animated');
+        },2650);
+        setTimeout(function(){
+            $('.box2-2').addClass('animated');
+        },2650);
+        setTimeout(function(){
+            $('.box3').addClass('animated');
+        },2800);
+        setTimeout(function(){
+            $('.box3-2').addClass('animated');
+        },2800);
+        setTimeout(function(){
+            $('.text-1').addClass('animated');
+        },2500);
+        setTimeout(function(){
+            $('.text-2').addClass('animated');
+        },2650);
+        setTimeout(function(){
+            $('.text-3').addClass('animated');
+        },280);
+        });
+        
+        
+// fade in nav text script        
+        $(document).ready(function(){
+           $(window).scroll(function(){
+               if($(window).scrollTop() > 0){
+                   $(".nav-wrapper").css({"background-color":"white"});
+                   $(".nav-wrapper").css({"top":"0px"});
+               }
+               else {
+                   $(".nav-wrapper").css({"background-color":"transparent"});
+                   $(".nav-wrapper").css({"top":"20px"});
+               }
+           });
+        });
+        
+        $(document).ready(function(){
+            $('.menu').click(function(){
+                $('.nav').toggleClass('active');
+                console.log('toggling');
+            });
+        });
+
+// hamburger menu script
+        $(document).ready(function(){
+            $('.hamburger').click(function(){
+                $('.menu-button').toggleClass('active');
+            }); 
+            $('.hamburger').click(function(){
+                $('.nav').toggleClass('active');
+            }); 
+            $('.hamburger').click(function(){
+                $('.nav-wrapper').toggleClass('active');
+            }); 
+        });
+        
+    </script>
+</html>
