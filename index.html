@@ -21,14 +21,14 @@
         <div class="nav-wrapper">
             <div class="topnav">
                 <div class="home-wrap">
-                    <a href="#" class="home">Willis Tiao</a>
+                    <a href="#body" class="home">Willis Tiao</a>
                 </div>
                 <div class="hamburger">
                     <div class="menu-button"></div>
                 </div>
                 <div class="nav">
-                    <a href="#" class="about">about</a>
-                    <a href="#" class="projects">projects</a>
+                    <a href="#about" class="about">about</a>
+                    <a href="#projects" class="projects">projects</a>
                     <a href="#" class="contact">contact</a>
                 </div>
             </div>
@@ -37,7 +37,7 @@
         <div class="intro-img">
 
         </div>
-        <div class="background">
+        <div id="body" class="background">
             <div class="intro-wrap">
                 <div class="box1"></div>
                 <div class="box1-2"></div>
@@ -50,15 +50,27 @@
             <div class="text-1">UI Designer</div>
             <div class="text-2">Front End Developer</div>
             <div class="text-3">Engineer</div>
+            <a href="#about" class="scroll">
             <div class="scroll-animation">
                <div class="scroll-box"></div>
                <div class="scroll-box-filled">
                    <div class="scroll-box-text">next</div>
                </div> 
             </div>
+            </a>
         </div>
-        <div class="about-wrapper">
+        <div class="about-wrapper" id="about">
+        </div>
+        <div class="about-content">
+            <div class="profile-img"></div>
+            <div class="about-info">
+                <p class="info-header">Hi, my name is Willis Tiao...</p>
+                <p class="profile-info">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+            </div>
 
+        </div>
+        <div class="projects-wrap" id="projects">
+            
         </div>
          
         </div>
@@ -168,6 +180,47 @@
                 $('.nav-wrapper').toggleClass('active');
             }); 
         });
+// smooth scroll script
+        $('a[href*="#"]')
+         // Remove links that don't actually link to anything
+         .not('[href="#"]')
+         .not('[href="#0"]')
+         .click(function(event) {
+           // On-page links
+           if (
+             location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+             &&
+             location.hostname == this.hostname
+           ) {
+             // Figure out element to scroll to
+             var target = $(this.hash);
+             target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+             // Does a scroll target exist?
+             if (target.length) {
+               // Only prevent default if animation is actually gonna happen
+               event.preventDefault();
+               $('html, body').animate({
+                 scrollTop: target.offset().top
+               }, 700, function() {
+                 // Callback after animation
+                 // Must change focus!
+                 var $target = $(target);
+                 $target.focus();
+                 if ($target.is(":focus")) { // Checking if the target was focused
+                   return false;
+                 } else {
+                   $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+                   $target.focus(); // Set focus again
+                 };
+               });
+             }
+            }
+            $(window).scroll(function() {
+                  var scroll = $(window).scrollTop();
+                  $(".intro-img.animated").css("transform","translateY(" +  (scroll/5)  + "px)");
+                 $(".about-content").css("transform","translateY(" +  (scroll/5)  + "px)");
+                });
+             });
         
     </script>
 </html>
