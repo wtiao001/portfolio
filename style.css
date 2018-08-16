@@ -49,27 +49,27 @@ body {
 #loader-wrapper .loader-section.section-1 {
     left: 0;
     transition:  all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1.000);
-    background-color: whitesmoke;
+    background-color: #DCECF9;
 }
 #loader-wrapper .loader-section.section-2 {
     left: 20%;
     transition:  all 0.7s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1.000);
-    background-color: whitesmoke;
+    background-color: #DCECF9;
 }
 #loader-wrapper .loader-section.section-3 {
     left: 40%;
     transition:  all 0.7s 0.2s cubic-bezier(0.645, 0.045, 0.355, 1.000);
-    background-color: whitesmoke;
+    background-color: #DCECF9;
 }
 #loader-wrapper .loader-section.section-4 {
     left: 60%;
     transition:  all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
-    background-color: whitesmoke;
+    background-color: #DCECF9;
 }
 #loader-wrapper .loader-section.section-5 {
     left: 80%;
     transition:  all 0.7s 0.4s cubic-bezier(0.645, 0.045, 0.355, 1.000);
-    background-color: whitesmoke;
+    background-color: #DCECF9;
 }
 #loader-wrapper #loader {
     position: absolute;
@@ -148,7 +148,7 @@ body {
     height: 4px;
     top: 50%;
     left: 15%;
-    background: #7A7A7A;
+    background: #C1C1C1;
     border-radius: 1px;
     transition: all .3s ease;
 }
@@ -159,7 +159,7 @@ body {
     position: absolute;
     width: 30px;
     height: 4px;
-    background: #7A7A7A;
+    background: #C1C1C1;
     border-radius: 1px;
     transition: all .5s ease;
 }
@@ -195,7 +195,7 @@ body {
     font-family: 'Bree serif', sans-serif;
     text-decoration: none;
     font-size: 40px;
-    color: #7A7A7A;
+    color: #C1C1C1;
     text-align: left;
     margin: 0;
     padding: 0;
@@ -221,7 +221,7 @@ body {
     text-decoration: none;
     font-size: 27px;
     margin-left: 1vw;
-    color: #7A7A7A;
+    color: #C1C1C1;
     opacity: 0;
     transition: opacity 0.3s ease, color .3s ease; 
 }
@@ -237,7 +237,7 @@ body {
     text-decoration: none;
     font-size: 27px;
     margin-left: 1vw;
-    color: #7A7A7A;
+    color: #C1C1C1;
     opacity: 0;
     transition: opacity 0.3s ease, color 0.3s ease;   
 }
@@ -253,7 +253,7 @@ body {
     text-decoration: none;
     font-size: 27px;
     margin-left: 1vw;
-    color: #7A7A7A;
+    color: #C1C1C1;
     opacity: 0;
     transition: opacity 0.3s ease, color 0.3s ease;   
 }
@@ -268,15 +268,15 @@ body {
     display: block;
     margin: 0;
     padding: 0;
-    background-color: lightsteelblue;
+    background-color: white;
     width: 100vw;
     height: 100vh;
     max-width: 100%;   
 }
 
 .intro-wrap.animated {
-    height: 60vh;
-    width: 80vw;
+    height: 100vh;
+    width: 100vw;
 }
 
 .intro-wrap{
@@ -286,9 +286,7 @@ body {
     display: block;
     height: 0vh;
     width: 0vw;
-    left: 8.5vw;
-    top: 10.5vh;
-    background: white;
+    background: #DCECF9;
     transition: all 1.2s ease;
 }
 
@@ -300,8 +298,8 @@ body {
     left: 0;
     top: 0;
     transition: all 1s ease;
-    background: white;
-    height: 25vh;
+    background: #DCECF9;
+    height: 33vh;
     width: 0;
 }
 .box1-2 {
@@ -312,15 +310,15 @@ body {
     left: 0;
     top: 0;
     transition: width 1s ease;
-    background: lightsteelblue;
-    height: 20vh;
+    background: white;
+    height: 33vh;
     width: 0;
 }
 .box1.animated {
-    width: 80vw;
+    width: 100vw;
 }
 .box1-2.animated {
-    width: 80vw;
+    width: 100vw;
 }
 
 .box2 {
@@ -329,10 +327,10 @@ body {
     position: absolute;
     display: block;
     left: 0;
-    top: 20vh;
+    top: 33vh;
     transition: all 1s ease;
-    background: white;
-    height: 20vh;
+    background: #DCECF9;
+    height: 33vh;
     width: 0;
 }
 .box2-2 {
@@ -341,17 +339,17 @@ body {
     position: absolute;
     display: block;
     left: 0;
-    top: 20vh;
+    top: 33vh;
     transition: width 1s ease;
-    background: lightsteelblue;
-    height: 20vh;
+    background: white;
+    height: 33vh;
     width: 0;
 }
 .box2.animated {
-    width: 80vw;
+    width: 100vw;
 }
 .box2-2.animated {
-    width: 80vw;
+    width: 100vw;
 }
 
 .box3 {
@@ -360,10 +358,10 @@ body {
     position: absolute;
     display: block;
     left: 0;
-    top: 40vh;
+    top: 66vh;
     transition: all 1s ease;
-    background: white;
-    height: 20vh;
+    background: #DCECF9;
+    height: 33vh;
     width: 0;
 }
 .box3-2 {
@@ -372,65 +370,153 @@ body {
     position: absolute;
     display: block;
     left: 0;
-    top: 40vh;
+    top: 66vh;
     transition: width 1s ease;
-    background: lightsteelblue;
-    height: 20vh;
+    background: white;
+    height: 34vh;
     width: 0;
 }
 .box3.animated {
-    width: 80vw;
+    width: 100vw;
 }
 .box3-2.animated {
-    width: 80vw;
+    width: 100vw;
 }
 
 
-
+.enjoy {
+    display: block;
+    position: relative;
+    top: 35vh;
+    padding-left: 25vw;
+    transition: all .5 ease;
+}
 .text-1 {
     position: absolute;
     display: inline-block;
-    left: 13vw;
-    top: 17%;
+    left: 25vw;
+    top: 25vh;
     font-family: 'Roboto Slab', sans-serif;
-    font-size: 100px;
+    font-size: 50px;
     font-weight: 400;
-    color: white;
+    color: black;
     opacity: 0;
     transition: all .5s ease;
     z-index: 11;
 }
 .text-2 {
-    position: absolute;
+    position: relative;
     display: inline-block;
-    left: 13vw;
-    top: 33%;
     font-family: 'Roboto Slab', sans-serif;
-    font-size: 100px;
+    font-size: 50px;
     font-weight: 400;
-    color: white;
-    overflow: hidden;
+    color: black;
     opacity: 0;
     transition: all 0.5s ease;
     z-index: 11;
 }
 .text-3 {
-    position: absolute;
+    position: relative;
     display: inline-block;
-    left: 13vw;
-    top: 49%;
     font-family: 'Roboto Slab', sans-serif;
-    font-size: 100px;
+    font-size: 65px;
     font-weight: 400;
-    color: white;
     opacity: 0;
     transition: all 0.5s ease;
     z-index: 11;
+    margin-left: 20px;
+    list-style: none;
+    width: 1000px;
+    height: 68px;
+}
+.text-3 li {
+    position: absolute;
+    display: inline-block;
+    transition: all 1.5s ease, opacity .2s ease;
 }
 
-#img {
+@keyframes imgFade {
+  from {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 0;
+    }
 
+    3% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    }
+
+    3.5% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    opacity: 1;
+    }
+
+    4% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    }
+    5% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 0);
+    transform: perspective(400px) rotate3d(1, 0, 0, 0);
+    }
+    17% {
+        opacity: 1;
+    }
+    18% {
+        opacity: 0;
+    }
+
+  to {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px);
+      opacity: 0;
+  }
 }
+.text-3 li {
+  animation-name: imgFade;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 18s;
+    background: white;
+}
+.text-3 li:nth-child(1) {
+    opacity: 0;
+    color: lightsteelblue;
+    animation-delay: 2s;
+}
+.text-3 li:nth-child(2) {
+    opacity: 0;
+    color: indianred;
+    animation-delay: 5s;
+}
+.text-3 li:nth-child(3) {
+    opacity: 0;
+    color: #6CD77E;
+    animation-delay: 8s;
+}
+.text-3 li:nth-child(4) {
+    opacity: 0;
+    color: #F0C68E;
+    animation-delay: 11s;
+}
+.text-3 li:nth-child(5) {
+    opacity: 0;
+    color: #B480D2;
+    animation-delay: 14s;
+}
+.text-3 li:nth-child(6) {
+    opacity: 0;
+    animation-delay: 17s;
+    color: #A3DCC7;
+}
+
+
 
 .intro-img {
     padding: 0;
@@ -447,7 +533,44 @@ body {
     border-radius: 50%;
     z-index: 10;
 }
+.intro-image {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    width: 600px;
+    top: 25vh;
+    height: 600px;
+    background: transparent;
+    left: 55vw;
+    transform: scale(0,0);
+    transform-origin: center;
+    transition: transform .8s ease;
+    border-radius: 50%;
+    z-index: 11;
+    overflow: hidden;
+}
+#img {
+    background-image: url(images/915.JPG);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: -50px;
+    left: -100px;
+    height: 800px;
+    width: 800px;
+    z-index: 12;
+}
+.intro-img-filter {
+    position: absolute;
+    background: rgba(237, 156, 156, 0.5);
+    width: 100%;
+    height: 100%;
+    z-index: 13;
+}
 .intro-img.animated {
+    transform: scale(1,1)
+}
+.intro-image.animated {
     transform: scale(1,1)
 }
 
@@ -462,54 +585,69 @@ body {
 }
 
 .scroll {
-/*    position: absolute;*/
-    top: 80%;
-    left: 45%;
+    position: relative;
+    display: block;
+    text-align: center;
+    height: 130px;
+    top: 50vh;
 }
 .scroll-animation {
     margin: 0;
     padding: 0;
-    position: absolute;
+    position: relative;
     display: inline-block;
-    top: 80%;
-    left: 45%;
+    padding-right: 100px;
+    opacity: 0;
     height: 130px;
     width: 65px;
-    opacity: 0;
+    opacity: 1;
     transition: opacity 1s ease;
     z-index: 11;
 }
-.scroll-animation.active {
-    opacity: 1;
-}
 .scroll-box {
     position: absolute;
-    border: 3px solid white;
-    height: 94px;
-    width: 144px;
-    transition: all .3s ease;
+    border: 3px solid #C1C1C1;
+    opacity: 0;
+    height: 0px;
+    width: 0px;
+    transition: all .5s ease;
 }
 
 .scroll-box-filled {
     position: absolute;
-    height: 100px;
-    width: 150px;
-    background: white;
+    height: 0px;
+    width: 0px;
+    background: #C1C1C1;
     left: 13px;
     top: 13px;
-    transition: all .3s ease;
+    transition: all .5s ease;
     z-index: 1000;
+    opacity: 0;
+}
+.scroll-box.animated {
+    width: 144px;
+    height: 54px;
+    opacity: 1;
+}
+.scroll-box-filled.animated {
+    width: 150px;
+    height: 60px;
+    opacity: 1;
+}
+.scroll-animation.animated {
+    opacity: 1;
 }
 
 .scroll-animation:hover > .scroll-box-filled {
     transform: translate3d(-13px, -13px,0);
-    background: darkgrey;
+    background: black;
     cursor: pointer;
 }
 .scroll-animation:hover > .scroll-box {
     transform: translate3d(13px, 13px,0);
     z-index: 1001;
     cursor: pointer;
+    border-color: black;
 }
 .scroll-animation:hover  .scroll-box-text {
     color: white;
@@ -518,13 +656,12 @@ body {
 
 .scroll-box-text {
     text-align: center;
-    margin-top: 30px;
+    margin-top: 13px;
     font-family: 'Roboto slab', sans-serif;
     font-weight: 400;
-    font-size: 30px;
-    color: lightsteelblue;
-    transition: color .3s ease
-    
+    font-size: 25px;
+    color: white;
+    transition: color .3s ease;
 }
 
 
@@ -536,7 +673,7 @@ body {
     width: 100vw;
     max-width: 100%;
     height: 1000px;
-    background-color: lightsalmon;
+    background-color: white;
     z-index: 9;
     text-align: center;
 }
@@ -553,24 +690,25 @@ body {
 }
 .profile-img {
     position: relative;
-    width: 250px;
+    display: inline-block;
+    margin: 75px;
+    width: 120px;
     height: 250px;
-    background: lightgrey;
+    background: white;
     border-radius: 50%;
-    left: 5%;
-    top: 20%;
 }
 .about-info {
     position: relative;
-    width: 50vw;
-    height: 340px;
+    display: inline-block;
+    width: 60%;
+    height: 300px;
     margin: 0;
     padding: 0;
-    top: -43%;
-    left: 28%; 
+    top: -110px;
 }
 .info-header {
     position: relative;
+    display: inline-block;
     margin: 0;
     padding: 0;
     font-size: 50px;
@@ -578,10 +716,72 @@ body {
     color: dimgray;
 }
 .profile-info {
+    position: relative;
+    display: inline-block;
     margin-top: 20px;
     font-size: 25px;
     font-family: sans-serif;
     font-weight: 300;
+}
+.scroll-animation2 {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    display: inline-block;
+    top: 120%;
+    left: 45%;
+    height: 130px;
+    width: 65px;
+    opacity: 1;
+    transition: opacity 1s ease;
+    z-index: 11;
+}
+.scroll-animation2.active {
+    opacity: 1;
+}
+.scroll-box2 {
+    position: absolute;
+    border: 3px solid white;
+    height: 94px;
+    width: 144px;
+    transition: all .3s ease;
+}
+
+.scroll-box-filled2 {
+    position: absolute;
+    height: 100px;
+    width: 150px;
+    background: white;
+    left: 13px;
+    top: 13px;
+    transition: all .3s ease;
+    z-index: 1000;
+}
+
+.scroll-animation2:hover > .scroll-box-filled2 {
+    transform: translate3d(-13px, -13px,0);
+    background: darkgrey;
+    cursor: pointer;
+}
+.scroll-animation2:hover > .scroll-box2 {
+    transform: translate3d(13px, 13px,0);
+    z-index: 1001;
+    cursor: pointer;
+}
+.scroll-animation2:hover  .scroll-box-text2 {
+    color: white;
+    cursor: pointer;
+}
+
+.scroll-box-text2 {
+    text-align: center;
+    margin-top: 30px;
+    font-family: 'Roboto slab', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    color: lightsteelblue;
+    transition: color .3s ease
+    
 }
 .projects-wrap {
     position: relative;
@@ -589,11 +789,96 @@ body {
     padding: 0;
     width: 100vw;
     max-width: 100%;
-    height: 1000px;
     background-color: darkseagreen;
     z-index: 9;
+    padding: 5vw;
+}
+.projects-title {
+    position: relative;
+    width: 90vw;
     text-align: center;
-    
+    font-size: 80px;
+    font-family: 'Roboto slab', sans-serif;
+    color: dimgray;
+}
+.project-bubble {
+    position: relative;
+    display: inline-block;
+    width: 40vw;
+    height: 40vh;
+    background: whitesmoke;
+    margin: 2.5vw;
+    border-radius: 20px;
+    margin-top: 5vw;
+    transition: all .3s ease;
+    cursor: pointer;
+    overflow: hidden;
+    text-align: center;
+}
+.amazon-img {
+    position: relative;
+    width: 150%;
+    height: 150%;
+    left: -160px;
+    transition: all .3s ease;
+}
+
+.project2 {
+    top: 20vh;
+}
+.photo-img {
+    position: relative;
+    width: 120%;
+    height: 120%;
+    left: -70px;
+    top:-50px;
+    transition: all .3s ease;
+}
+.project-bubble:hover {
+    transform: scale(1.1)
+}
+.project-bubble:hover img{
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+.museum-img {
+    position: relative;
+    width: 150%;
+    height: 170%;
+    left: -130px;
+    top:-50px;
+    transition: all .3s ease;
+}
+.project-bubble:hover .museum-img{
+    width: 120%;
+    height: 135%;
+    left: -20px;
+    top: -20px;
+}
+.shadow {
+    position: absolute;
+    width: 40vw;
+    height: 40vh;
+    background: darkgrey;
+    border-radius: 20px;
+    transition: all .3s ease;
+    cursor: pointer;
+    overflow: hidden;
+    text-align: center;
+    opacity: 0;
+    top:0;
+    left: 0;
+    z-index: 100;
+    font-family: sans-serif;
+    padding-top: 15vh;
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+}
+.project-bubble:hover .shadow{
+    opacity: .85;
 }
 
 /*
@@ -613,19 +898,8 @@ body {
     background-color: dimgray;
 }
 */
-@media screen and (max-width: 1150px) {
-    .text-1 {
-        font-size: 8vw;
-        top: 15%;
-        line-height: 5vh;
-    }
-    .text-2 {
-            font-size: 8vw;
-    }
-    .text-3 {
-            font-size: 8vw;
-        line-height: 5vh;
-    }
+@media screen and (max-width: 415px) {
+
 }
 
 @media screen and (max-width: 800px) {
@@ -699,5 +973,9 @@ body {
         width: 100vw;
     }
 
+}
+
+.revealOnScroll {
+    opacity: 1;
 }
 

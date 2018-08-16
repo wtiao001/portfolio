@@ -2,8 +2,11 @@
 <html>
     <head>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="animate.css">
         <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Roboto+Slab" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     </head>
     <body>
         <div id="loader-wrapper">
@@ -34,9 +37,13 @@
             </div>
         </div>
         
-        <div class="intro-img">
-
+<!--
+        <div class="intro-img"></div>
+        <div class="intro-image">
+            <div class="intro-img-filter"></div>
+            <img id="img">
         </div>
+-->
         <div id="body" class="background">
             <div class="intro-wrap">
                 <div class="box1"></div>
@@ -47,30 +54,59 @@
                 <div class="box3-2"></div> 
             </div>
 
-            <div class="text-1">UI Designer</div>
-            <div class="text-2">Front End Developer</div>
-            <div class="text-3">Engineer</div>
+            <div class="text-1">Hi, my name is Willis.</div>
+            <div class="enjoy">
+                <div class="text-2">I enjoy</div>
+                <div class="text-3">
+                    <li>Product Design.</li>
+                    <li>Front End Development.</li>
+                    <li>User Experience Design.</li>
+                    <li>Photography.</li>
+                    <li>Making Music.</li>
+                    <li>Surfing.</li>
+                </div>
+            </div>
             <a href="#about" class="scroll">
             <div class="scroll-animation">
                <div class="scroll-box"></div>
                <div class="scroll-box-filled">
-                   <div class="scroll-box-text">next</div>
+                   <div class="scroll-box-text">projects</div>
                </div> 
             </div>
             </a>
         </div>
         <div class="about-wrapper" id="about">
         </div>
-        <div class="about-content">
+        <div class="about-content revealOnScroll" data-animation="flipInX" data-timeout="600">
             <div class="profile-img"></div>
             <div class="about-info">
                 <p class="info-header">Hi, my name is Willis Tiao...</p>
-                <p class="profile-info">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                <p class="profile-info">I studied my undergraduate degree at the University of California, Riverside in Mechanical Engineering. However, my passion for design led me to explore UX/UI design and Front End Dev. I enjoy creating dynamic and engaging designs that are easily translatable into feasible and real world websites.</p>
             </div>
+            <a href="#projects" class="scroll">
+            <div class="scroll-animation2">
+               <div class="scroll-box2"></div>
+               <div class="scroll-box-filled2">
+                   <div class="scroll-box-text2">more</div>
+               </div> 
+            </div>
+            </a>
 
         </div>
         <div class="projects-wrap" id="projects">
-            
+           <div class="projects-title">Check out my projects</div>
+            <a href="https://wtiao001.github.io/amazon_echo" class="project-bubble project1 revealOnScroll" data-animation="flipInX" data-timeout="600">
+               <div class="shadow amz">Amazon Echo Microsite</div>
+                <img src="images/amazon_echo.JPG" class="amazon-img">
+            </a>
+            <div class="project-bubble project2 revealOnScroll" data-animation="flipInX" data-timeout="600">
+               <div class="shadow phot">Personal Photography Site</div>
+                <img src="images/photo_site.JPG" class="photo-img">
+            </div>
+            <div class="project-bubble project3 revealOnScroll" data-animation="flipInX" data-timeout="600">
+               <div class="shadow mus">inMuseum App/Site Case Study</div>
+                <img src="images/inmuseum.png" class="museum-img">
+            </div>
         </div>
          
         </div>
@@ -139,13 +175,15 @@
             $('.text-3').addClass('animated');
         },2800);
         setTimeout(function(){
-            $('.scroll-animation').addClass('active');
-        },4000);
+            $('.scroll-animation').addClass('animated');
+        },3000);
         setTimeout(function(){
-            $('.intro-img').addClass('animated');
-        },2800);
-        });
-        
+            $('.scroll-box').addClass('animated');
+        },3000);
+        setTimeout(function(){
+            $('.scroll-box-filled').addClass('animated');
+        },3200);
+        }); 
         
 // fade in nav text script        
         $(document).ready(function(){
@@ -219,8 +257,52 @@
                   var scroll = $(window).scrollTop();
                   $(".intro-img.animated").css("transform","translateY(" +  (scroll/5)  + "px)");
                  $(".about-content").css("transform","translateY(" +  (scroll/5)  + "px)");
+                 $(".intro-image.animated").css("transform","translateY(" +  (scroll/4)  + "px)");
                 });
              });
+//animate on scroll script
+$(function() {
+
+  var $window           = $(window),
+      win_height_padded = $window.height() * 1.1,
+      isTouch           = Modernizr.touch;
+
+  if (isTouch) { $('.revealOnScroll').addClass('animated'); }
+
+  $window.on('scroll', revealOnScroll);
+
+  function revealOnScroll() {
+    var scrolled = $window.scrollTop(),
+        win_height_padded = $window.height() * 1.1;
+
+    // Showed...
+    $(".revealOnScroll:not(.animated)").each(function () {
+      var $this     = $(this),
+          offsetTop = $this.offset().top;
+
+      if (scrolled + win_height_padded > offsetTop) {
+        if ($this.data('timeout')) {
+          window.setTimeout(function(){
+            $this.addClass('animated ' + $this.data('animation'));
+          }, parseInt($this.data('timeout'),10));
+        } else {
+          $this.addClass('animated ' + $this.data('animation'));
+        }
+      }
+    });
+    // Hidden...
+   $(".revealOnScroll.animated").each(function (index) {
+      var $this     = $(this),
+          offsetTop = $this.offset().top;
+      if (scrolled + win_height_padded < offsetTop) {
+        $(this).removeClass('animated flipInX fadein fadeinup')
+      }
+    });
+  }
+
+  revealOnScroll();
+});
+       
         
     </script>
 </html>
