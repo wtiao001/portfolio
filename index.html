@@ -37,20 +37,13 @@
             </div>
         </div>
         
-<!--
-        <div class="intro-img"></div>
-        <div class="intro-image">
-            <div class="intro-img-filter"></div>
-            <img id="img">
-        </div>
--->
         <div id="body" class="background">
             <div class="intro-wrap">
-                <div class="box1"></div>
+                <div class="box1 changer"></div>
                 <div class="box1-2"></div>
-                <div class="box2"></div>
+                <div class="box2 changer"></div>
                 <div class="box2-2"></div>
-                <div class="box3"></div>
+                <div class="box3 changer"></div>
                 <div class="box3-2"></div> 
             </div>
 
@@ -58,56 +51,58 @@
             <div class="enjoy">
                 <div class="text-2">I enjoy</div>
                 <div class="text-3">
-                    <li>Product Design.</li>
                     <li>Front End Development.</li>
+                    <li>Product Design.</li>
                     <li>User Experience Design.</li>
                     <li>Photography.</li>
                     <li>Making Music.</li>
                     <li>Surfing.</li>
                 </div>
             </div>
+            <div class="text-4">Scroll down to view some of my <a href="#projects" class="link">projects</a> or to learn more <a href="#about" class="link">about me</a>.</div>
+<!--
             <a href="#about" class="scroll">
             <div class="scroll-animation">
                <div class="scroll-box"></div>
                <div class="scroll-box-filled">
-                   <div class="scroll-box-text">projects</div>
+                   <div class="scroll-box-text"></div>
                </div> 
             </div>
             </a>
+-->
         </div>
-        <div class="about-wrapper" id="about">
-        </div>
-        <div class="about-content revealOnScroll" data-animation="flipInX" data-timeout="600">
-            <div class="profile-img"></div>
-            <div class="about-info">
-                <p class="info-header">Hi, my name is Willis Tiao...</p>
-                <p class="profile-info">I studied my undergraduate degree at the University of California, Riverside in Mechanical Engineering. However, my passion for design led me to explore UX/UI design and Front End Dev. I enjoy creating dynamic and engaging designs that are easily translatable into feasible and real world websites.</p>
-            </div>
-            <a href="#projects" class="scroll">
-            <div class="scroll-animation2">
-               <div class="scroll-box2"></div>
-               <div class="scroll-box-filled2">
-                   <div class="scroll-box-text2">more</div>
-               </div> 
-            </div>
-            </a>
 
-        </div>
         <div class="projects-wrap" id="projects">
-           <div class="projects-title">Check out my projects</div>
-            <a href="https://wtiao001.github.io/amazon_echo" class="project-bubble project1 revealOnScroll" data-animation="flipInX" data-timeout="600">
+<!--           <div class="projects-title">Check out my projects</div>-->
+            <a href="https://wtiao001.github.io/amazon_echo" class="project-bubble">
                <div class="shadow amz">Amazon Echo Microsite</div>
-                <img src="images/amazon_echo.JPG" class="amazon-img">
+                <img src="images/echo.png" class="amazon-img">
             </a>
-            <div class="project-bubble project2 revealOnScroll" data-animation="flipInX" data-timeout="600">
-               <div class="shadow phot">Personal Photography Site</div>
-                <img src="images/photo_site.JPG" class="photo-img">
-            </div>
-            <div class="project-bubble project3 revealOnScroll" data-animation="flipInX" data-timeout="600">
-               <div class="shadow mus">inMuseum App/Site Case Study</div>
+            <div class="project-bubble project2">
+                <div class="shadow mus">inMuseum App/Site Case Study</div>
                 <img src="images/inmuseum.png" class="museum-img">
             </div>
+            <div class="project-bubble">
+                <div class="shadow phot">Personal Photography Site</div>
+                <img src="images/photo_site.JPG" class="photo-img">   
+            </div>
+            <div class="project-bubble project2">
+               <div class="shadow rage">RageDonate Site Redesign</div>
+                <img src="" class="museum-img">
+            </div>
         </div>
+        
+        <div class="about-wrapper" id="about">
+            <div class="about-content">
+                <div class="profile-img"></div>
+                <div class="about-info">
+                    <p class="info-header">Hi, my name is Willis Tiao...</p>
+                    <p class="profile-info">I studied my undergraduate degree at the University of California, Riverside in Mechanical Engineering. However, my passion for design led me to explore UX/UI design and Front End Dev. I enjoy creating dynamic and engaging designs that are easily translatable into feasible and real world websites.</p>
+                </div>
+            </div>
+        </div>
+
+
          
         </div>
 
@@ -166,14 +161,17 @@
             $('.box3-2').addClass('animated');
         },2800);
         setTimeout(function(){
-            $('.text-1').addClass('animated');
+            $('.text-1').css({"opacity":"1"});
         },2500);
         setTimeout(function(){
-            $('.text-2').addClass('animated');
+            $('.text-2').css({"opacity":"1"});
         },2650);
         setTimeout(function(){
-            $('.text-3').addClass('animated');
+            $('.text-3').css({"opacity":"1"});
         },2800);
+        setTimeout(function(){
+            $('.text-4').css({"opacity":"1"});
+        },2950);
         setTimeout(function(){
             $('.scroll-animation').addClass('animated');
         },3000);
@@ -184,6 +182,13 @@
             $('.scroll-box-filled').addClass('animated');
         },3200);
         }); 
+        
+// color changer        
+        $(document).ready(function() {
+            var colors = ["indianred", "lightsteelblue", "#6CD77E", "#F0C68E", "#B480D2", "#A3DCC7"];
+            var rand = Math.floor(Math.random() * colors.length);
+            $('.loader-section, .intro-wrap').css("background-color", colors[rand]);
+        });
         
 // fade in nav text script        
         $(document).ready(function(){
@@ -256,7 +261,7 @@
             $(window).scroll(function() {
                   var scroll = $(window).scrollTop();
                   $(".intro-img.animated").css("transform","translateY(" +  (scroll/5)  + "px)");
-                 $(".about-content").css("transform","translateY(" +  (scroll/5)  + "px)");
+                 $(".about-content").css("transform","translateY(" +  (scroll/10)  + "px)");
                  $(".intro-image.animated").css("transform","translateY(" +  (scroll/4)  + "px)");
                 });
              });
