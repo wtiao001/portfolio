@@ -83,6 +83,9 @@
                     <div class="bubble-text-2">A streamlined site for new and experienced customers to learn about the Amazon Echo product line.</div>
                 </div>
             </div>
+            
+<!--            Amazon project   -->
+           
             <img src="images/Artboard%201-8.png" class="amazon-mockup">
             <div class="amazon-project-content">
                 <a href="https://wtiao001.github.io/amazon_echo/" class="view-amazon">view site</a>
@@ -110,7 +113,7 @@
                     <div class="motivation-content">We looked at the top competitors in the smart speaker market (Amazon Echo, Google Home, and Apple HomePod), researching respective sale statistics and the average smart speaker owner. Although the Amazon Echo is the leading seller of smart speakers, Google Home and other competitors are growing at faster rates and projected to overtake the Amazon Echo in 2018. It is clear that Amazon needs to adapt in order to remain a viable competitor.</div>   
                 </div>
                 <div class="motivation-wrap">
-                    <div class="motivation-title">Defining the Problem</div> 
+                    <div class="motivation-title">Research</div> 
                     <div class="motivation-content">Statistics from comScore and canalys show that while the Amazon Echo was the most popular smart speaker in the U.S., Google Home has surpassed Amazon Echo globally, both in market dominance and growth. In the graph below, you can see how the smart speaker market is expected to change. Notice, that both Amazon's competitors and the total market size are growing at an exponential rate.</div>
                     <div class="figure-wrap">
                        <div class="graph-wrap">
@@ -149,34 +152,83 @@
                     </div>
                     <div class="graph-insights">
                         <div class="year-wrap">
-                            <div class="year year1">2017</div>
+                            <div class="year year1">2017
+                            <div class="year-back"></div></div>
                             <div class="year year2">2018</div>
                         </div>
+                        <div class="graph-insights-title">Key Insights</div>
+                        <ul class="insights">
+                            <li>Total market size is growing exponentially</li>
+                            <li>New competitors are entering the market, providing alternative smart speaker options</li>
+                            <li>Amazon's growth is declining</li>
+                        </ul>
                     </div>
                     </div>
                     
-                    <div class="motivation-content">From this data, Amazon Echo is growing at a significantly slower rate than it's competitors. Although the Amazon Echo still stands as a leading option for smart speakers, the introduction of new competition and increase in total market size means that Amazon needs to adapt in order to remain a viable competitor.</div>   
+                    <div class="motivation-content">From this data, Amazon Echo is growing at a significantly slower rate than it's competitors. Although the Amazon Echo still stands as a leading option for smart speakers, the introduction of new competition and increase in total market size means that Amazon needs to react in order to remain a viable competitor.</div>   
                 </div>
                 <div class="motivation-wrap">
-                    <div class="motivation-title">What about the user?</div> 
+                    <div class="motivation-title">Defining the User and Problem</div> 
                     <div class="motivation-content">With the results of our sales research, my team was curious whether the Amazon Echo's slowing growth rate was directly related with a potential user problem. We began looking into what Amazon was doing differently compared to it's top competitors to showcase their products. </div>
                     <div class="motivation-content">The first thing we noticed was that it was difficult to find information on</div>   
                 </div>
                 <div class="motivation-wrap">
-                    <div class="motivation-title">Design</div> 
+                    <div class="motivation-title">Design Process</div> 
                     <div class="wireframe-back">
                         <img src="images/amazon_wireframe.png" class="wireframe">
                     </div>   
                 </div>
+                <div class="color-box-wrap">
+                    <div class="color-box">
+                        <div class="cbox cbox1"></div>
+                        <div class="cbox-text">#008296</div>
+                    </div>
+                    <div class="color-box">
+                        <div class="cbox cbox2"></div>
+                        <div class="cbox-text">#B6E1ED</div>
+                    </div> 
+                    <div class="color-box">
+                        <div class="cbox cbox3"></div>
+                        <div class="cbox-text">#6C7778</div>
+                    </div> 
+                    <div class="color-box">
+                        <div class="cbox cbox4"></div>
+                        <div class="cbox-text">#EAEDED</div>
+                    </div>   
+                </div>
+                <div class="color-box-wrap">
+                    <div class="typo-box">
+                        
+                    </div>
+                </div>
+                <div class="motivation-wrap">
+                    <div class="motivation-title">Future Plans</div> 
+                    <div class="motivation-content">Our next step for this project will be to complete pages for each remaining Echo product. Each product page will consist of the same user flow leading towards checkout. </div>
+                    <div class="motivation-content">Because most customers will be browsing products via the Amazon webpage, we want the final s </div>   
+                </div>
+            </div>
+                
+            <div class="project-bubble2-wrap">
+                <div class="project-bubble2">
+                    <div class="mus-img-wrap">
+                        <img src="images/museum_phone.png" class="museum-img">
+                        <div class="bubble-text-wrap2">inMuseum
+                        <div class="bubble-text-22">An interactive museum experience in the palm of your hands</div>
+                    </div>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            
+            <div class="project-bubble3">
+                
             </div>
             </div>
+            
+           
 
-<!--
-            <div class="project-bubble project2">
-                <div class="shadow mus">inMuseum App/Site Case Study</div>
-                <img src="images/inmuseum.png" class="museum-img">
-            </div>
--->
+
 <!--
             <div class="project-bubble">
                 <div class="shadow phot">Personal Photography Site</div>
@@ -301,7 +353,10 @@
         },3200);
         setTimeout(function(){
             $('.project-bubble').css({"opacity":"1"});
-        },3200);
+        },3000);
+        setTimeout(function(){
+            $('.project-bubble2').css({"opacity":"1"});
+        },3050);
         }); 
         
 
@@ -342,31 +397,77 @@ $(document).ready(function(){
                 $('.back-button').css({"visibility":"visible"});
                 $('.back-button').css({"opacity":"1"});
             }); 
+            $('.project-bubble').click(function(){
+                $('.project-bubble2').css({"display":"none"});
+                $('.project-bubble3').css({"display":"none"});
+            }); 
             
+
+    
+
+    // MUSEUM PROJECT CLICK
+            $('.project-bubble2').click(function(){
+                $('.project-bubble2').addClass('active');
+                    $(this).addClass('no-hover');
+            });
+            $('.project-bubble2').click(function(){
+                setTimeout(function(){
+                    {$("html,body").animate({scrollTop:$(".background").offset().top},"0");return false};
+                },300);
+            });
+    
+    
+    
+            $('.project-bubble2').click(function(){
+                $('.background').css({"display":"none"});
+            }); 
 //            $('.project-bubble').click(function(){
-//                setTimeout(function(){
-//                    $('.amazon-mockup').css({"opacity":"1"});
-//                },1000);
+//                $('.amazon-project-content').addClass('active');
+//                $('.projects-wrap').addClass('active');
 //            });
-    
-    
+            $('.project-bubble2').click(function(){
+                $('.museum-img').addClass('active');
+            }); 
+            $('.project-bubble2').click(function(){
+                $('.home').css({"display":"none"});
+            }); 
+//            $('.project-bubble').click(function(){
+//                $('.amazon-mockup').css({"visibility":"visible"});
+//                $('.amazon-mockup').css({"opacity":"1"});
+//            }); 
+            $('.project-bubble2').click(function(){
+                $('.back-button').css({"visibility":"visible"});
+                $('.back-button').css({"opacity":"1"});
+            }); 
     
     // BACK BUTTON CLICK
             $('.back-button').click(function(){
                 $('.background').css({"display":"block"});
+                setTimeout(function(){
+                    {$("html,body").animate({scrollTop:$(".projects-wrap").offset().top},"500");return false};
+                },0);
+                
+                // Amazon return
                 $('.project-bubble').removeClass('active');
                 $('.project-bubble').removeClass('no-hover');
                 $('.amazon-project-content').removeClass('active');
                 $('.amazon-img').removeClass('active');
-                $('.home').css({"display":"block"});
-                $('.back-button').css({"visibility":"hidden"});
                 $('.amazon-mockup').css({"opacity":"0"});
                 setTimeout(function(){
                 $('.amazon-mockup').css({"visibility":"hidden"});
                 },300);
-                setTimeout(function(){
-                    {$("html,body").animate({scrollTop:$(".projects-wrap").offset().top},"500");return false};
-                },0);
+                
+                // Museum return
+                $('.project-bubble2').removeClass('active');
+                $('.project-bubble2').removeClass('no-hover');
+                $('.museum-img').removeClass('active');
+                $('.home').css({"display":"block"});
+                $('.back-button').css({"visibility":"hidden"});
+                
+                
+                $('.project-bubble').css({"display":"inline-block"});
+                $('.project-bubble2').css({"display":"inline-block"});
+                $('.project-bubble3').css({"display":"inline-block"});
 //             
             }); 
     
@@ -413,6 +514,44 @@ $(document).ready(function(){
             });
         });
 
+// DRAG SCROLL
+   const slider = document.querySelector('.wireframe-back');
+        let isDown = false;
+        let startX;
+        let scrollLeft;
+        
+        slider.addEventListener('mousedown', (e) => {
+            isDown = true;
+            slider.classList.add('active');
+            $(".wireframe").addClass('active');
+            startX = e.pageX - slider.offsetLeft;
+            scrollLeft = slider.scrollLeft;
+        });
+        
+        slider.addEventListener('mouseleave', () => {
+            isDown = false;
+            slider.classList.remove('active');
+            $(".wireframe").removeClass('active');
+        });
+        
+        slider.addEventListener('mouseup', () => {
+            isDown = false;
+            slider.classList.remove('active');
+            $(".wireframe").removeClass('active');
+        });
+        
+        slider.addEventListener('mousemove', (e) => {
+            if (!isDown) return; // stop fn from running
+            e.preventDefault();
+            const x = e.pageX - slider.offsetLeft;
+            console.log({x, startX});
+            const walk = (x - startX);
+            slider.scrollLeft = scrollLeft - walk;
+        });
+
+        
+        
+        
 // hamburger menu script
         $(document).ready(function(){
             $('.hamburger').click(function(){

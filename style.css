@@ -856,7 +856,7 @@ padding-left: 5vw;
     color: dimgray;
 }
 .project-bubble {
-    position: relative;
+    position: absolute;
     display: inline-block;
     width: 40vw;
     height: 30vw;
@@ -881,12 +881,13 @@ padding-left: 5vw;
     width: 100vw;
     max-width: 100%;
     left: -7.5vw;
-    top: -7.5vw;
+    top: 45vh;
     background: white;
     display: block;
     opacity: 0;
     transition: all .5s ease;
     z-index: 999;
+    display: none;
 }
 .amazon-project-content.active {
     display: block;
@@ -924,7 +925,7 @@ padding-left: 5vw;
     position: relative;
     width: 25vw;
     height: 250px;
-    color: black;
+    color: #3F3F3F;
     font-family: 'Roboto Slab', sans-serif;
     font-size: 30px;
     vertical-align: top; 
@@ -935,6 +936,7 @@ padding-left: 5vw;
     font-size: 18px;
     padding-top: 20px;
     width: 20vw;
+    color: #939292;
 }
 .motivation-wrap {
     position: relative;
@@ -947,9 +949,10 @@ padding-left: 5vw;
     position: relative;
     display: inline-block;
     width: 50vw;
-    font-size: 40px;
+    font-size: 50px;
     font-family: 'Roboto Slab', sans-serif;
     text-align: left;
+    color: #3F3F3F;
 }
 .motivation-content {
     position: relative;
@@ -959,6 +962,7 @@ padding-left: 5vw;
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
     padding-top: 20px;
+    color: #939292;
     
 }
 .figure-wrap {
@@ -966,6 +970,9 @@ padding-left: 5vw;
     display: block;
     width: 70vw;
     text-align: center;
+    background: #EEEEEF; 
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 .graph-wrap {
     display: inline-block;
@@ -975,27 +982,51 @@ padding-left: 5vw;
 }
 .graph-title {
     font-family: 'Roboto Slab', sans-serif;
-    font-size: 25px;
+    font-size: 30px;
     font-weight: 400;
     text-align: left;
     color: dimgray;
 }
+
 .year-wrap {
     position: absolute;
     left: 800px;
+    border: solid red;
+    top: 0;
+}
+.year-back {
+    
 }
 .year {
     font-family: 'Open Sans', sans-serif;
     font-size: 30px;
     cursor: pointer;
     display: inline-block;
+    margin-left: 20px;
+    z-index: 11;
+    color: dimgray;
+    background: beige;
 }
 .year1 {
     
 }
 .graph-insights {
     display: inline-block;
-    width: 500px;
+    width: 30vw;
+    text-align: left;
+}
+.graph-insights-title {
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 50px;
+    color: #4382AC;
+}
+.insights li{
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 25px;
+    padding-top: 30px;
+    list-style-position: outside;
+    list-style-type: square;
+    color: #5BAADF;
 }
 .md-wrap {
     width: 500px;
@@ -1006,7 +1037,7 @@ padding-left: 5vw;
 }
 .md-title {
     font-family: 'Roboto Slab', sans-serif;
-    font-size: 15px;
+    font-size: 20px;
     font-weight: 400;
     color: dimgray;
     margin-top: 30px;
@@ -1178,15 +1209,180 @@ padding-left: 5vw;
 }
 
 .wireframe-back {
+    position: relative;
+    left: 0;
     margin-top: 50px;
-    width: 100vw;
-    height: 400px;
+    width: 75vw;
+    height: 600px;
     background: #00a8cf;
     overflow: hidden;
+    user-select: none;
+    cursor: grab;
+}
+.wireframe-back.active {
+    cursor: grabbing;
 }
 .wireframe {
-    height: 100%;
+    height: 100%; 
+    overflow-x: scroll;
+    transition: transform .3s ease;
 }
+.wireframe.active {
+    transform:scale(1.005);
+}
+
+
+.color-box-wrap {
+    position: relative;
+    width: 97vw;
+    text-align: center;
+    margin-bottom: 100px;
+    margin-top: 150px;
+}
+.color-box {
+    display: inline-block;
+    height: 250px;
+    width: 200px;
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.cbox {
+    height: 200px;
+    width: 200px;
+    box-shadow: 0px 0px 8px rgba(0,0,0,0.3);
+}
+.cbox1 {
+    background: #008296;
+}
+.cbox2 {
+    background: #B6E1ED;
+}
+.cbox3 {
+    background: #6C7778;
+}
+.cbox4 {
+    background: #EAEDED;
+}
+.cbox-text {
+    padding-top: 15px;
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 20px;
+}
+
+.project-bubble2-wrap {
+    position: absolute;
+    width: 84vw;
+    text-align: right;
+    left: 7.5vw;
+}
+.project-bubble2 {
+    position: relative;
+    display: inline-block;
+    width: 40vw;
+    height: 30vw;
+    margin-right: 0vw;
+    transition: all .3s ease, width .5s ease, top .5s .5s ease, left 1s ease, opacity .5s ease;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 1000;
+    opacity: 0;
+    background-image: url(images/museum_back.png);
+}
+.museum-back {
+    position: relative;
+    height: 100%;
+    transition: all .3s ease;
+    z-index: 1;
+}
+.mus-img-wrap {
+    position: absolute;
+    right: 0;
+    width: 40vw;
+    height: 30vw;
+    text-align: right;
+}
+.museum-img {
+    position: relative;
+    height: 130%;
+    transition: all .3s ease;
+    left: -15%;
+    z-index: 2;
+    opacity: 1;
+}
+.museum-img.active {
+    opacity: 0;
+}
+.project-bubble2:not(.no-hover):hover {
+    transform: scale(1.04);
+    z-index: 1000000;
+    width: 84vw;
+}
+.project-bubble2:not(.no-hover):hover .bubble-text-wrap2{
+    opacity: 1;
+    top: 8vh;
+}
+.project-bubble2:not(.no-hover):hover .museum-img{
+    height: 110%;
+    left: 100px;
+    left: -15%;
+}
+.project-bubble2.active {
+    transition: width .3s .5s ease, transform .5s .5s cubic-bezier(0.645, 0.045, 0.355, 1.000), height .5s ease;
+    margin-top: 0;
+    width: 100vw;
+    height: 55vh;
+    transform: translate3d(-7.5vw, -7.5vw, 0);
+    cursor: auto;
+}
+.bubble-text-wrap2 {
+    position: absolute;
+    display: inline-block;
+    left: -35vw;
+    top: 5vh;
+    width: 37vw;
+    height: 30vw;
+    font-family: 'Bree serif', sans-serif;
+    font-size: 4vw;
+    color: azure;
+    margin-top: 8%;
+    opacity: 0;
+    transition: all .5s .2s ease;
+    text-align: left;
+}
+.bubble-text-22 {
+    font-size: 2vw;
+    font-family: 'Open sans', sans-serif;
+    color: #AF5656;
+}
+/*
+.bubble2-extend {
+    position: absolute;
+    width: 10px;
+    height: 40vw;
+    background: red;
+    display: inline-block;
+    top: 0;
+    transition: width .5s ease, left .5s ease;
+}
+*/
+
+
+.project-bubble3 {
+    position: absolute;
+    display: inline-block;
+    width: 40vw;
+    height: 30vw;
+    top: 40vw;
+    background: beige;
+    margin-right: 0vw;
+    transition: all .3s ease, width .5s ease, top .5s .5s ease, left 1s ease, opacity .5s ease;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 1000;
+    opacity: 1;
+}
+
 .img-wrap {
     position: relative;
     display: inline-block;
@@ -1227,6 +1423,7 @@ padding-left: 5vw;
 .project-bubble:not(.no-hover):hover {
     transform: scale(1.04);
     width: 84vw;
+    z-index: 1000000;
 }
 .project-bubble:not(.no-hover):hover .bubble-text-wrap{
     opacity: 1;
@@ -1245,14 +1442,6 @@ padding-left: 5vw;
     top: 0;
 }
 
-
-.museum-img {
-    position: relative;
-    width: 135%;
-    height: 130%;
-    transition: all .3s ease;
-    left: -10%;
-}
 .project-bubble:hover .museum-img{
     width: 115%;
     height: 110%;
