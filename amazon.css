@@ -1,0 +1,414 @@
+.amazon-project-content {
+    position: relative;
+    width: 100vw;
+    max-width: 100%;
+    left: -7.5vw;
+    top: 45vh;
+    background: white;
+    display: block;
+    opacity: 0;
+    transition: all .5s ease;
+    z-index: 999;
+    display: none;
+}
+.amazon-project-content.active {
+    display: block;
+    opacity: 1;
+}
+
+.amazon-mockup {
+    position: absolute;
+    height: 55vh;
+    top: 10vh;
+    left: 10vw;
+    opacity: 0;
+    transition: all .5s ease;
+    visibility: hidden;
+    z-index: 1000;
+}
+.view-amazon {
+    position: absolute;
+    left: 65vw;
+    top: 45vh;
+    font-size: 30px;
+    font-family: "Bree serif", sans-serif;
+    color: white;
+    cursor: pointer;
+}
+.trio-wrap {
+    position: relative;
+    width: 100vw;
+    padding-top: 150px;
+    text-align: center;
+}
+.trio {
+    display: inline-block;
+    text-align: left;
+    position: relative;
+    width: 25vw;
+    height: 250px;
+    color: #3F3F3F;
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 30px;
+    vertical-align: top; 
+    margin-left: 30px;
+}
+.trio-content {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    padding-top: 20px;
+    width: 20vw;
+    color: #939292;
+}
+.motivation-wrap {
+    position: relative;
+    width: 100vw;
+    text-align: left;
+    padding-left: 11vw;
+    margin-bottom: 100px;
+}
+.motivation-title {
+    position: relative;
+    display: inline-block;
+    width: 50vw;
+    font-size: 50px;
+    font-family: 'Roboto Slab', sans-serif;
+    text-align: left;
+    color: #3F3F3F;
+}
+.motivation-content {
+    position: relative;
+    display: inline-block;
+    width: 70vw;
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    padding-top: 20px;
+    color: #939292;
+    
+}
+.figure-wrap {
+    position: relative;
+    display: block;
+    width: 70vw;
+    text-align: center;
+    background: #EEEEEF; 
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.graph-wrap {
+    display: inline-block;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 560px;
+}
+.graph-title {
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: left;
+    color: dimgray;
+}
+
+.year-wrap {
+    position: absolute;
+    left: 800px;
+    border: solid red;
+    top: 0;
+}
+.year-back {
+    
+}
+.year {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 20px;
+    z-index: 11;
+    color: dimgray;
+    background: beige;
+}
+.year1 {
+    
+}
+.graph-insights {
+    display: inline-block;
+    width: 30vw;
+    text-align: left;
+}
+.graph-insights-title {
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 50px;
+    color: #4382AC;
+}
+.insights li{
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 25px;
+    padding-top: 30px;
+    list-style-position: outside;
+    list-style-type: square;
+    color: #5BAADF;
+}
+.md-wrap {
+    width: 500px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    margin-right: 50px;
+}
+.md-title {
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: dimgray;
+    margin-top: 30px;
+    z-index: 1000;
+}
+/* PIE CHART */
+/* Pie Chart */
+.pieContainer {
+    height: 300px;
+    width: 300px;
+    margin-top: 30px;
+    position: relative;
+    margin-left: 100px;
+}
+
+.pieBackground {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 8px rgba(0,0,0,0.5);
+} 
+
+.pie {
+  transition: all 1s;
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  clip: rect(0px, 150px, 300px, 0px);
+}
+
+.hold {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  clip: rect(0px, 300px, 300px, 150px);
+}
+
+.pieSlice1 .pie {
+  background-color: #9acc60;
+  transform:rotate(70deg);
+}
+
+.pieSlice2 {
+  transform: rotate(70deg);
+}
+
+.pieSlice2 .pie {
+  background-color: #05bbc9;
+  transform: rotate(180deg);
+}
+
+.pieSlice3 {
+  transform: rotate(200deg);
+}
+
+.pieSlice3 .pie {
+  background-color: #05bbc9;
+  transform: rotate(155deg);
+}
+
+.pieSlice4 {
+  transform: rotate(230deg);
+}
+
+.pieSlice4 .pie {
+  background-color: #939393;
+  transform: rotate(130deg);
+}
+
+
+/* PIE 2018 */
+.pieSlice1.active .pie {
+  background-color: #9acc60;
+  transform:rotate(130deg);
+}
+
+.pieSlice3.active .pie {
+  background-color: #05bbc9;
+  transform: rotate(50deg);
+}
+
+/* BAR GRAPH */
+
+.bar-wrap {
+    width: 600px;
+    height: 100px;
+    margin-top: 50px;
+}
+.amazon-bar {
+    position: absolute;
+    transition: width 1s;
+    width: 157px;
+    height: 100px;
+    background: #05bbc9;
+}
+.google-bar { 
+    position: absolute;
+    transition: width 1s;
+    width: 200px;
+    height: 100px;
+    background: #9acc60;
+}
+.other-bar {
+    position: absolute;
+    background: #939393;
+    transition: width 1s;
+    width: 210px;
+    height: 100px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+}
+
+.amazon-bar.active {
+    position: absolute;
+    transition: width 1s;
+    width: 170px;
+    height: 100px;
+    background: #05bbc9;
+}
+.google-bar.active { 
+    position: absolute;
+    transition: width 1s;
+    width: 400px;
+    height: 100px;
+    background: #9acc60;
+}
+.other-bar.active {
+    position: absolute;
+    background: #939393;
+    transition: width 1s;
+    width: 540px;
+    height: 100px;
+}
+.bottom-bar {
+    margin-top: 10px;
+    height: 30px;
+    width: 540px;
+    border-top: solid 2px dimgray;
+}
+.bottom-bar-tab {
+    display: inline-block;
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: dimgray;
+    height: 10px;
+    width: 54px;
+    border-right: solid 2px dimgray;
+    text-align: left;
+}
+.bottom-bar-tab-last {
+    position: relative;
+    left: 540px;
+    bottom: 20px;
+    width: 10px;
+    text-align: left;
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: dimgray;
+}
+.units {
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: dimgray;
+}
+
+.wireframe-back {
+    position: relative;
+    left: 0;
+    margin-top: 50px;
+    width: 75vw;
+    height: 600px;
+    background: #00a8cf;
+    overflow: hidden;
+    user-select: none;
+    cursor: grab;
+}
+.wireframe-back.active {
+    cursor: grabbing;
+}
+.wireframe {
+    height: 100%; 
+    overflow-x: scroll;
+    transition: transform .3s ease;
+}
+.wireframe.active {
+    transform:scale(1.005);
+}
+
+
+.color-box-wrap {
+    position: relative;
+    width: 97vw;
+    text-align: center;
+    margin-bottom: 100px;
+    margin-top: 150px;
+}
+.color-box {
+    display: inline-block;
+    height: 250px;
+    width: 200px;
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.cbox {
+    height: 200px;
+    width: 200px;
+    box-shadow: 0px 0px 8px rgba(0,0,0,0.3);
+}
+.cbox1 {
+    background: #008296;
+}
+.cbox2 {
+    background: #B6E1ED;
+}
+.cbox3 {
+    background: #6C7778;
+}
+.cbox4 {
+    background: #EAEDED;
+}
+.cbox-text {
+    padding-top: 15px;
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 20px;
+}
+
+.interview-wrap {
+    width: 70vw;
+    text-align: center;
+}
+.quote-wrap {
+    display: inline-block;
+    width: 15.5vw;
+    margin: 3vw;
+    text-align: left;
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    color: #00a8cf;
+    vertical-align: middle;
+}
+.quote-person {
+    margin-top: 15px;
+    font-size: 25px;
+    color: #00a8cf;
+}

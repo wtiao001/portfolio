@@ -4,8 +4,9 @@
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="animate.css">
         <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Roboto+Slab|Open+Sans|Anton" rel="stylesheet">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+        </script>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'/>
         <title>Willis Tiao - UX/UI Design Portfolio</title>
     </head>
     <body>
@@ -18,13 +19,16 @@
             <div class="loader-section section-3"></div>
             <div class="loader-section section-4"></div>
             <div class="loader-section section-5"></div>
-            
+
         </div>
-        <div>
+    
         <div class="nav-wrapper">
             <div class="topnav">
                 <div class="home-wrap">
-                    <a href="#body" class="home">Willis Tiao</a>
+                    <div class="home-buttons">
+                       <a href="#body" class="home">Willis Tiao</a>
+                       <a href="#body" class="home2">WT</a>    
+                    </div>
                     <div class="back-button">&#60;back</div>
                 </div>
                 <div class="hamburger">
@@ -39,244 +43,125 @@
         </div>
         
         <div id="body" class="background">
-            <div class="intro-wrap">
-                <div class="box1 changer"></div>
-                <div class="box1-2"></div>
-                <div class="box2 changer"></div>
-                <div class="box2-2"></div>
-                <div class="box3 changer"></div>
-                <div class="box3-2"></div> 
-            </div>
-
-            <div class="text-1">Hi, my name is Willis.</div>
-            <div class="enjoy">
-                <div class="text-2">I enjoy</div>
-                <div class="text-3">
-                    <li>Front End Development.</li>
-                    <li>Product Design.</li>
-                    <li>User Experience Design.</li>
-                    <li>Photography.</li>
-                    <li>Making Music.</li>
-                    <li>Surfing.</li>
+            <div class="hi-text-wrap">
+                <div class="text-1">Hi, my name is Willis Tiao.</div>
+                <div class="enjoy">
+                    <div class="text-2">I enjoy</div>
+                    <div class="text-3">
+                        <li>Front End Development.</li>
+                        <li>Product Design.</li>
+                        <li>User Experience Design.</li>
+                        <li>Photography.</li>
+                        <li>Making Music.</li>
+                        <li>Surfing.</li>
+                    </div>
                 </div>
+                <div class="text-4">Scroll down to view some of my <a href="#projects" class="link">projects</a> and to learn more <a href="#about" class="link">about me</a>.</div> 
             </div>
-            <div class="text-4">Scroll down to view some of my <a href="#projects" class="link">projects</a> and to learn more <a href="#about" class="link">about me</a>.</div>
-<!--
-            <a href="#about" class="scroll">
-            <div class="scroll-animation">
-               <div class="scroll-box"></div>
-               <div class="scroll-box-filled">
-                   <div class="scroll-box-text"></div>
-               </div> 
-            </div>
-            </a>
--->
         </div>
-
-        <div class="projects-wrap" id="projects">
-<!--           <div class="projects-title">Check out my projects</div>-->
-            <div class="project-bubble">
-                <div class="img-wrap">
-                    <img src="images/echo.png" class="amazon-img">
-                </div>
-                <div class="bubble-text-wrap">Amazon Echo Microsite
-                    <div class="bubble-text-2">A streamlined site for new and experienced customers to learn about the Amazon Echo product line.</div>
-                </div>
-            </div>
-            
-<!--            Amazon project   -->
-           
-            <img src="images/Artboard%201-8.png" class="amazon-mockup">
-            <div class="amazon-project-content">
-                <a href="https://wtiao001.github.io/amazon_echo/" class="view-amazon">view site</a>
-                <div class="trio-wrap">
-                    <div class="trio">Project
-                        <div class="trio-content">This newly designed micro-site provides a more user friendly way to learn about the Amazon Echo product line.</div>
-                    </div>
-                    <div class="trio">Team
-                        <div class="trio-content">
-                            <div>Willis Tiao</div>
-                            <div>Son Tran</div>
-                            <div>Sahar Abdizadeh</div>    
-                        </div>
-                    </div>
-                    <div class="trio">My Role
-                        <div class="trio-content">
-                            <div>Design</div>
-                            <div>Development</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="motivation-wrap">
-                    <div class="motivation-title">Project Overview</div> 
-                    <div class="motivation-content">Our previous projects were mostly service oriented, so as a team we thought it would be interesting to come up with a design solution that was centered around a physical product rather than a service. With it's rising popularity, the smart speaker was a perfect product for us to identify business challenges that could be turned into opportunities. </div>
-                    <div class="motivation-content">We looked at the top competitors in the smart speaker market (Amazon Echo, Google Home, and Apple HomePod), researching respective sale statistics and the average smart speaker owner. Although the Amazon Echo is the leading seller of smart speakers, Google Home and other competitors are growing at faster rates and projected to overtake the Amazon Echo in 2018. It is clear that Amazon needs to adapt in order to remain a viable competitor.</div>   
-                </div>
-                <div class="motivation-wrap">
-                    <div class="motivation-title">Research</div> 
-                    <div class="motivation-content">Statistics from comScore and canalys show that while the Amazon Echo was the most popular smart speaker in the U.S., Google Home has surpassed Amazon Echo globally, both in market dominance and growth. In the graph below, you can see how the smart speaker market is expected to change. Notice, that both Amazon's competitors and the total market size are growing at an exponential rate.</div>
-                    <div class="figure-wrap">
-                       <div class="graph-wrap">
-                        <div class="graph-title">Q1 2017 and Q1 2018 comparison</div>
-                        <div class="md-wrap">
-                            <div class="md-title">Percent of Market Dominated</div>
-                            <div class="pieContainer">
-                              <div class="pieBackground"></div>
-                              <div class="hold pieSlice4"><div class="pie"></div></div>
-                              <div class="hold pieSlice2"><div class="pie"></div></div>
-                              <div class="hold pieSlice1"><div class="pie"></div></div>
-                              <div class="hold pieSlice3"><div class="pie"></div></div>
-                            </div>
-                        </div>
-                        <div class="md-wrap">
-                            <div class="md-title">Projected Total Market Growth</div>
-                            <div class="bar-wrap">
-                                <div class="other-bar"></div>
-                                <div class="google-bar"></div>
-                                <div class="amazon-bar"></div>
-                            </div>
-                            <div class="bottom-bar">
-                                <div class="bottom-bar-tab">0</div>
-                                <div class="bottom-bar-tab">10</div>
-                                <div class="bottom-bar-tab">20</div>
-                                <div class="bottom-bar-tab">30</div>
-                                <div class="bottom-bar-tab">40</div>
-                                <div class="bottom-bar-tab">50</div>
-                                <div class="bottom-bar-tab">60</div>
-                                <div class="bottom-bar-tab">70</div>
-                                <div class="bottom-bar-tab">80</div>
-                                <div class="bottom-bar-tab-last">90</div>
-                            </div>
-                            <div class="units">Units sold (in millions)</div>
-                        </div>
-                    </div>
-                    <div class="graph-insights">
-                        <div class="year-wrap">
-                            <div class="year year1">2017
-                            <div class="year-back"></div></div>
-                            <div class="year year2">2018</div>
-                        </div>
-                        <div class="graph-insights-title">Key Insights</div>
-                        <ul class="insights">
-                            <li>Total market size is growing exponentially</li>
-                            <li>New competitors are entering the market, providing alternative smart speaker options</li>
-                            <li>Amazon's growth is declining</li>
-                        </ul>
-                    </div>
-                    </div>
-                    
-                    <div class="motivation-content">From this data, Amazon Echo is growing at a significantly slower rate than it's competitors. Although the Amazon Echo still stands as a leading option for smart speakers, the introduction of new competition and increase in total market size means that Amazon needs to react in order to remain a viable competitor.</div>   
-                </div>
-                <div class="motivation-wrap">
-                    <div class="motivation-title">Defining the User and Problem</div> 
-                    <div class="motivation-content">With the results of our sales research, my team was curious whether the Amazon Echo's slowing growth rate was directly related with a potential user problem. We began looking into what Amazon was doing differently compared to it's top competitors to showcase their products. </div>
-                    <div class="motivation-content">The first thing we noticed was that it was difficult to find information on</div>   
-                </div>
-                <div class="motivation-wrap">
-                    <div class="motivation-title">Design Process</div> 
-                    <div class="wireframe-back">
-                        <img src="images/amazon_wireframe.png" class="wireframe">
-                    </div>   
-                </div>
-                <div class="color-box-wrap">
-                    <div class="color-box">
-                        <div class="cbox cbox1"></div>
-                        <div class="cbox-text">#008296</div>
-                    </div>
-                    <div class="color-box">
-                        <div class="cbox cbox2"></div>
-                        <div class="cbox-text">#B6E1ED</div>
-                    </div> 
-                    <div class="color-box">
-                        <div class="cbox cbox3"></div>
-                        <div class="cbox-text">#6C7778</div>
-                    </div> 
-                    <div class="color-box">
-                        <div class="cbox cbox4"></div>
-                        <div class="cbox-text">#EAEDED</div>
-                    </div>   
-                </div>
-                <div class="color-box-wrap">
-                    <div class="typo-box">
-                        
-                    </div>
-                </div>
-                <div class="motivation-wrap">
-                    <div class="motivation-title">Future Plans</div> 
-                    <div class="motivation-content">Our next step for this project will be to complete pages for each remaining Echo product. Each product page will consist of the same user flow leading towards checkout. </div>
-                    <div class="motivation-content">Because most customers will be browsing products via the Amazon webpage, we want the final s </div>   
-                </div>
-            </div>
-                
-            <div class="project-bubble2-wrap">
-                <div class="project-bubble2">
-                    <div class="mus-img-wrap">
-                        <img src="images/museum_phone.png" class="museum-img">
-                        <div class="bubble-text-wrap2">inMuseum
-                        <div class="bubble-text-22">An interactive museum experience in the palm of your hands</div>
-                    </div>
-                    </div>
-                    
-                </div>
-            </div>
-            
-            
-            <div class="project-bubble3">
-                
-            </div>
-            </div>
-            
-           
-
-
-<!--
-            <div class="project-bubble">
-                <div class="shadow phot">Personal Photography Site</div>
-                <img src="images/photo_site.JPG" class="photo-img">   
-            </div>
-            <div class="project-bubble project2">
-               <div class="shadow rage">RageDonate Site Redesign</div>
-                <img src="" class="museum-img">
-            </div>
--->
         
-<!--
+
+       
+       
+       
+       
+       
+        <div class="projects-wrap first" id="projects">
+
+<!--        AMAZON PROJECT BUBBLE           -->
+           <div class="project-bubble-wrap">
+               <div class="project-bubble">
+                    <div class="img-wrap">
+                        <img src="images/echo.png" class="amazon-img">
+                    </div>
+                    <div class="bubble-text-wrap">Amazon Echo Microsite
+                        <div class="bubble-text-2">A streamlined site for new and experienced customers to learn about the Amazon Echo product line.</div>
+                    </div>
+                </div>
+           </div>
+            
+<!--            <img src="images/Artboard%201-8.png" class="amazon-mockup">-->
+<!--            <div class="amazon-project-content" id="amazon_content"></div>-->
+ 
+<!--        INMUSEUM PROJECT BUBBLE           --> 
+           <div class="project-bubble-wrap-wrap">
+                <div class="project-bubble-right-wrap">
+                    <div class="project-bubble-right">
+                            <div class="mus-img-wrap">
+                                <div class="bubble-text-wrap2">inMuseum
+                                    <div class="bubble-text-22">An app concept that provides an interactive and authentic museum experience for the user.</div>
+                                </div>
+                                <img src="images/museum_phone.png" class="museum-img">
+                            </div>    
+                        </div>
+                        <div class="museum-project-content" id="museum_content"></div>
+                    </div>
+                </div>
+           </div>
+        
+           
+                             
+                                               
+        <div class="projects-wrap">
+<!--        IKEA PROJECT BUBBLE           -->
+           <div class="project-bubble-wrap">
+               <div class="project-bubble ikea">
+                   <div class="img-wrap">
+                        <img src="images/ikea.png" class="amazon-img">
+                   </div>
+
+               </div>
+           </div>
+
+           
+                      
+           
+<!--        RAGE PROJECT BUBBLE           -->
+           <div class="project-bubble-wrap-wrap">
+                <div class="project-bubble-right-wrap">
+                    <div class="project-bubble-right rage">
+
+                    </div>
+                </div>
+           </div>    
+        </div>
+                  
+        <div class="more-projects">
+            
+        </div>
+       
+       <div class="more-wrap">
+          <div class="more-move">
+              <a class="more-button">more</a>
+              <a class="less-button">less</a>    
+          </div>
+       </div>
+       
+       
+        
+        
+        
+
+           
+           
+           
+<!--     ABOUT CONTENT           -->           
         <div class="about-wrapper" id="about">
+            <img class="profile-img" src="images/profile.png">
             <div class="about-content">
-                <div class="profile-img"></div>
-                <div class="about-info">
-                    <p class="info-header">Hi, my name is Willis Tiao...</p>
-                    <p class="profile-info">I studied my undergraduate degree at the University of California, Riverside in Mechanical Engineering. However, my passion for design led me to explore UX/UI design and Front End Dev. I enjoy creating dynamic interfaces that are translatable into feasible design solutions.</p>
-                </div>
+                I studied my undergraduate degree at the University of California, Riverside in Mechanical Engineering. However, my passion for design led me to explore UX/UI design and Front End Dev. As a recent graduate from the UX/UI program at UC Irvine, I enjoy creating dynamic interfaces that are translatable into feasible design solutions.
+                <div class="about-content-2">If I'm not coding, you can probably find me near a beach or jamming on my guitar. </div>
+                <div class="about-content-2">Feel free to check me out on these other platforms or leave me a message. Let's talk! </div>
             </div>
+            <div class="social-wrap"></div>
         </div>
--->
         
-<!--
-        <div class="follow-wrapper">
-            <div class="follow-text-wrapper">
-                <div class="follow-text">Want to see more?<div class="follow-text">You can also follow me on</div></div>
-            </div>
+
+
             
-            
-        </div>
--->
-<!--
-        <div class="footer">
-            <div class="icon-wrapper">
-                <a href="" class="foot-icon"></a>
-                <a href="" class="foot-icon"></a>
-                <a href="" class="foot-icon"></a>
-            </div>
-        </div>
--->
-
-         
-        </div>
-
-
-        
     </body>
+    
+    
     <script>
 // preloader script
         $(document).ready(function(){
@@ -302,7 +187,7 @@
         },1800);
         setTimeout(function(){
             $('.about').css({"opacity":"1"});
-        },1900);
+        },1800);
         setTimeout(function(){
             $('.projects').css({"opacity":"1"});
         },1950);
@@ -358,10 +243,26 @@
             $('.project-bubble2').css({"opacity":"1"});
         },3050);
         }); 
-        
+          
+
+
 
 // project clicks
 $(document).ready(function(){
+    
+    // MORE PROJECTS CLICK
+            $('.more-button').click(function(){
+                $('.more-move').addClass('clicked');
+                $('.more-projects').addClass('more');
+                $('.less-button').css({"opacity":"1"});
+                $('.more-button').css({"opacity":"0"});
+            }); 
+            $('.less-button').click(function(){
+                $('.more-move').removeClass('clicked');
+                $('.more-projects').removeClass('more');
+                $('.more-button').css({"opacity":"1"});
+                $('.less-button').css({"opacity":"0"});
+            }); 
 
     // AMAZON PROJECT CLICK
             $('.project-bubble').click(function(){
@@ -387,7 +288,7 @@ $(document).ready(function(){
                 $('.amazon-img').addClass('active');
             }); 
             $('.project-bubble').click(function(){
-                $('.home').css({"display":"none"});
+                $('.home-buttons').css({"display":"none"});
             }); 
             $('.project-bubble').click(function(){
                 $('.amazon-mockup').css({"visibility":"visible"});
@@ -421,15 +322,15 @@ $(document).ready(function(){
             $('.project-bubble2').click(function(){
                 $('.background').css({"display":"none"});
             }); 
-//            $('.project-bubble').click(function(){
-//                $('.amazon-project-content').addClass('active');
-//                $('.projects-wrap').addClass('active');
-//            });
+            $('.project-bubble2').click(function(){
+                $('.museum-project-content').addClass('active');
+                $('.projects-wrap').addClass('active');
+            });
             $('.project-bubble2').click(function(){
                 $('.museum-img').addClass('active');
             }); 
             $('.project-bubble2').click(function(){
-                $('.home').css({"display":"none"});
+                $('.home-buttons').css({"display":"none"});
             }); 
 //            $('.project-bubble').click(function(){
 //                $('.amazon-mockup').css({"visibility":"visible"});
@@ -439,6 +340,18 @@ $(document).ready(function(){
                 $('.back-button').css({"visibility":"visible"});
                 $('.back-button').css({"opacity":"1"});
             }); 
+            $('.project-bubble2').click(function(){
+                $('.project-bubble').css({"display":"none"});
+                $('.project-bubble3').css({"display":"none"});
+            }); 
+    
+    // PROJECT HTML LOAD 
+            $(function(){
+                $("#amazon_content").load("amazon.html");
+                $("#museum_content").load("museum.html"); 
+//                $("#amazon_content").load("amazon.html"); 
+//                $("#amazon_content").load("amazon.html"); 
+            });
     
     // BACK BUTTON CLICK
             $('.back-button').click(function(){
@@ -461,8 +374,9 @@ $(document).ready(function(){
                 $('.project-bubble2').removeClass('active');
                 $('.project-bubble2').removeClass('no-hover');
                 $('.museum-img').removeClass('active');
-                $('.home').css({"display":"block"});
+                $('.home-buttons').css({"display":"block"});
                 $('.back-button').css({"visibility":"hidden"});
+                $('.museum-project-content').removeClass('active');
                 
                 
                 $('.project-bubble').css({"display":"inline-block"});
@@ -515,42 +429,42 @@ $(document).ready(function(){
         });
 
 // DRAG SCROLL
-   const slider = document.querySelector('.wireframe-back');
-        let isDown = false;
-        let startX;
-        let scrollLeft;
+//   const slider = document.querySelector('.wireframe-back');
+//        let isDown = false;
+//        let startX;
+//        let scrollLeft;
+//        
+//        slider.addEventListener('mousedown', (e) => {
+//            isDown = true;
+//            slider.classList.add('active');
+//            $(".wireframe").addClass('active');
+//            startX = e.pageX - slider.offsetLeft;
+//            scrollLeft = slider.scrollLeft;
+//        });
+//        
+//        slider.addEventListener('mouseleave', () => {
+//            isDown = false;
+//            slider.classList.remove('active');
+//            $(".wireframe").removeClass('active');
+//        });
+//        
+//        slider.addEventListener('mouseup', () => {
+//            isDown = false;
+//            slider.classList.remove('active');
+//            $(".wireframe").removeClass('active');
+//        });
+//        
+//        slider.addEventListener('mousemove', (e) => {
+//            if (!isDown) return; // stop fn from running
+//            e.preventDefault();
+//            const x = e.pageX - slider.offsetLeft;
+//            console.log({x, startX});
+//            const walk = (x - startX);
+//            slider.scrollLeft = scrollLeft - walk;
+//        });
         
-        slider.addEventListener('mousedown', (e) => {
-            isDown = true;
-            slider.classList.add('active');
-            $(".wireframe").addClass('active');
-            startX = e.pageX - slider.offsetLeft;
-            scrollLeft = slider.scrollLeft;
-        });
         
-        slider.addEventListener('mouseleave', () => {
-            isDown = false;
-            slider.classList.remove('active');
-            $(".wireframe").removeClass('active');
-        });
-        
-        slider.addEventListener('mouseup', () => {
-            isDown = false;
-            slider.classList.remove('active');
-            $(".wireframe").removeClass('active');
-        });
-        
-        slider.addEventListener('mousemove', (e) => {
-            if (!isDown) return; // stop fn from running
-            e.preventDefault();
-            const x = e.pageX - slider.offsetLeft;
-            console.log({x, startX});
-            const walk = (x - startX);
-            slider.scrollLeft = scrollLeft - walk;
-        });
 
-        
-        
         
 // hamburger menu script
         $(document).ready(function(){
@@ -599,12 +513,12 @@ $(document).ready(function(){
                });
              }
             }
-            $(window).scroll(function() {
-                  var scroll = $(window).scrollTop();
-                  $(".intro-img.animated").css("transform","translateY(" +  (scroll/5)  + "px)");
-                 $(".about-content").css("transform","translateY(" +  (scroll/10)  + "px)");
-                 $(".intro-image.animated").css("transform","translateY(" +  (scroll/4)  + "px)");
-                });
+//            $(window).scroll(function() {
+//                  var scroll = $(window).scrollTop();
+//                  $(".intro-img.animated").css("transform","translateY(" +  (scroll/5)  + "px)");
+//                 $(".about-content").css("transform","translateY(" +  (scroll/10)  + "px)");
+//                 $(".intro-image.animated").css("transform","translateY(" +  (scroll/4)  + "px)");
+//                });
              });
 //animate on scroll script
 $(function() {
