@@ -37,7 +37,7 @@
                 <div class="nav">
                     <a href="#about" class="about">about</a>
                     <a href="#projects" class="projects">projects</a>
-                    <a href="#" class="contact">contact</a>
+                    <a href="#contact" class="contact">contact</a>
                 </div>
             </div>
         </div>
@@ -147,13 +147,41 @@
            
 <!--     ABOUT CONTENT           -->           
         <div class="about-wrapper" id="about">
-            <img class="profile-img" src="images/profile.png">
+            <img class="profile-img">
             <div class="about-content">
                 I studied my undergraduate degree at the University of California, Riverside in Mechanical Engineering. However, my passion for design led me to explore UX/UI design and Front End Dev. As a recent graduate from the UX/UI program at UC Irvine, I enjoy creating dynamic interfaces that are translatable into feasible design solutions.
                 <div class="about-content-2">If I'm not coding, you can probably find me near a beach or jamming on my guitar. </div>
-                <div class="about-content-2">Feel free to check me out on these other platforms or leave me a message. Let's talk! </div>
+                <div class="about-content-2">Feel free to check me out on these other platforms or leave me a message. </div>
             </div>
             <div class="social-wrap"></div>
+        </div>
+        
+        
+<!--        CONTACT CONTENT      -->
+        <div class="contact-wrapper" id="contact">
+            <div class="contact-text-wrap">
+                Lets talk!
+                <div class="contact-text">Say hi or tell me about a cool project you want to work on. <div>Whatever it is I'm excited to talk.</div></div>
+            </div>
+            <form action="contact.php" method="post" enctype="text/plain" class="form" role=form>
+               
+                <label for="name" class="form-label">Name *</label>
+                <input type="text" id="name" name="firstname" required>
+                
+                <label for="email" class="form-label">Email address *</label>
+                <input type="text" id="email" name="email" required>
+                
+                <label for="subject" class="form-label">Subject *</label>
+                <input type="text" id="subject" name="subject" required>
+                
+                <label for="message" class="form-label">Message *</label>
+                <textarea type="text" id="message" name="message" size="50" class="form-message"></textarea>
+                
+                <div class="finish-buttons">
+                    <input type="submit" name="sendMail" value="Send" class="submit-button" style="margin-right:20px;">
+                    <input type="reset" value="Reset" class="reset-button">    
+                </div>
+            </form>
         </div>
         
 
@@ -405,6 +433,8 @@ $(document).ready(function(){
             var colors = ["indianred", "lightsteelblue", "#6CD77E", "#F0C68E", "#B480D2", "#A3DCC7"];
             var rand = Math.floor(Math.random() * colors.length);
             $('.loader-section, .intro-wrap').css("background-color", colors[rand]);
+            $('.contact-text-wrap').css("color", colors[rand]);
+            $('input[type=submit]').css("background-color", colors[rand]);
         });
         
 // fade in nav text script        
