@@ -163,6 +163,26 @@
                 Lets talk!
                 <div class="contact-text">Say hi or tell me about a cool project you want to work on. <div>Whatever it is I'm excited to talk.</div></div>
             </div>
+            <form action="https://formspree.io/tiaowillis2@gmail.com"
+                  method="POST" class="form">
+                                <label for="name" class="form-label">Name *</label>
+                <input type="text" id="name" name="firstname" required>
+                
+                <label for="email" class="form-label">Email address *</label>
+                <input type="text" id="email" name="email" required>
+                
+                <label for="subject" class="form-label">Subject *</label>
+                <input type="text" id="subject" name="subject" required>
+                
+                <label for="message" class="form-label">Message *</label>
+                <textarea type="text" id="message" name="message" size="50" class="form-message"></textarea>
+                
+                <div class="finish-buttons">
+                    <input type="submit" name="sendMail" value="Send" class="submit-button" style="margin-right:20px;">
+                    <input type="reset" value="Reset" class="reset-button">    
+                </div>
+            </form>
+<!--
             <form action="contact.php" method="post" enctype="text/plain" class="form" role=form>
                
                 <label for="name" class="form-label">Name *</label>
@@ -182,6 +202,7 @@
                     <input type="reset" value="Reset" class="reset-button">    
                 </div>
             </form>
+-->
         </div>
         
 
